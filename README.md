@@ -13,11 +13,8 @@ The goals of this project are the following:
 [image2]: ./images/um_000047.png "P2"
 [image3]: ./images/um_000000.png "P3"
 [image4]: ./images/losses.png "P4"
-[image5]: ./images/.png "P5"
-[image6]: ./images/.png "P6"
-[image7]: ./images/.png "P7"
-[image8]: ./images/.png "P8"
-[image9]: ./images/.png "P9"
+[image5]: ./images/um_000091.png "P5"
+[image6]: ./images/um_000095.png "P6"
 
 The Rubric Points are listed in this following [link](https://review.udacity.com/#!/rubrics/989/view)
 
@@ -40,5 +37,7 @@ The transpose layers were implemented in the "layer" function definition in Cell
 
 ## Optimization and Training Neural Network
 The Adam Optimizer was used to minimize the cross entropy loss for the stochastic gradient descent process.  The optimization was implemented in the "optimize" function definition in cell block #5. This operation is similar to the deep learning project in Term 1.  Test was passed and the requirement is satisfied.  Only 2 classes were classified in this implementation, "road" and "not road".  The Kitti dataset was used. The training and testing dataset were already separated when the dataset was downloaded.  Since the AMS g3.4xlarge instance was used, higher batch size can be accomodated without running into resource constraint.  A batch size of 5 and a epoch number of 48 were used, and it was found that the desirable classification results were achieved.
+It was found that more than 80% of the road was classified correctly on average, however some scenes where shadows are cast on the road, poor classification results are observed.  For future improvement, VGG-16 should train on a color constant images from the ImageNet, and then the results should be loaded to construct this FCN.  Kitti dataset should be processed the same way in order to reduce the shadow effect. See the pictures below:
 
-
+![alt text][image5]
+![alt text][image6]

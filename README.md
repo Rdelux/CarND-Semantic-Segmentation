@@ -13,8 +13,8 @@ The goals of this project are the following:
 [image2]: ./images/um_000047.png "P2"
 [image3]: ./images/um_000000.png "P3"
 [image4]: ./images/losses.png "P4"
-[image5]: ./images/um_000091.png "P5"
-[image6]: ./images/um_000095.png "P6"
+[image5]: ./images/um_000093.png "P5"
+[image6]: ./images/um_000073.png "P6"
 
 The Rubric Points are listed in this following [link](https://review.udacity.com/#!/rubrics/989/view)
 
